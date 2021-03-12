@@ -10,7 +10,7 @@ namespace DotnetCoreServer.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        // GET api/values
+        // GET api/va
         [HttpGet]
         public IEnumerable<string> Get()
         {
