@@ -5,11 +5,10 @@ namespace DotnetCoreServer.Models
     public class RankUser
     {
         public long UserID;
-        public string FacebookID;
-        public string FacebookName;
-        public string FacebookPhotoURL;
+        public string KakaoID;
+        public string KakaoName;
+        public string KakaoPhotoURL;
         public int Point;
-        public DateTime CreatedAt;
         public int Rank;
 
     }

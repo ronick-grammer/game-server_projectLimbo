@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DotnetCoreServer.Models;
-
+/*
 namespace DotnetCoreServer.Controllers
 {
     [Route("[controller]/[action]")]
@@ -107,3 +107,4 @@ namespace DotnetCoreServer.Controllers
 
     }
 }
+*/

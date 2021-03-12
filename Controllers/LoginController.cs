@@ -31,7 +31,7 @@ namespace DotnetCoreServer.Controllers
 
             LoginResult result = new LoginResult();
             
-            User user = userDao.FindUserByFUID(requestUser.FacebookID);
+            User user = userDao.FindUserByFUID(requestUser.KakaoID);
             
             if(user != null && user.UserID > 0){ // 이미 가입되어 있음
                 
@@ -47,7 +47,7 @@ namespace DotnetCoreServer.Controllers
 
                 requestUser.AccessToken = AccessToken;
                 userDao.InsertUser(requestUser);
-                user = userDao.FindUserByFUID(requestUser.FacebookID);
+                user = userDao.FindUserByFUID(requestUser.KakaoID);
                 result.Data = user;
                 result.Message = "New User";
                 result.ResultCode = 2;

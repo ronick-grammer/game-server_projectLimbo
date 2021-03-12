@@ -2,6 +2,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 
+/*
 namespace DotnetCoreServer.Models
 {
     public interface IStageResultDao{
@@ -39,9 +40,6 @@ namespace DotnetCoreServer.Models
         
             return true;
         }
-
-
-
-
     }
 }
+*/

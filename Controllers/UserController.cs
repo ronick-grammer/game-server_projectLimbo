@@ -24,7 +24,7 @@ namespace DotnetCoreServer.Controllers
             return result;
 
         }
-
+/*
         [HttpPost]
         public UserResult Update([FromBody] User requestUser){
 
@@ -38,7 +38,7 @@ namespace DotnetCoreServer.Controllers
 
             return result;
         }
-
+*/
     }
 
 }

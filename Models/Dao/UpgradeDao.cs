@@ -1,7 +1,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-
+/*
 namespace DotnetCoreServer.Models
 {
     public interface IUpgradeDao{
@@ -90,3 +90,4 @@ namespace DotnetCoreServer.Models
 
     }
 }
+*/
