@@ -42,7 +42,7 @@ namespace DotnetCoreServer.Controllers
                 return result;
 
             } else { // 회원가입 해야함
-                
+                // 임의 문자열 생성
                 string AccessToken = Guid.NewGuid().ToString();
 
                 requestUser.AccessToken = AccessToken;
