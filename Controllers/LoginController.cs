@@ -26,7 +26,7 @@ namespace DotnetCoreServer.Controllers
 
         // POST Login/Facebook
         [HttpPost]
-        public LoginResult Facebook([FromBody] User requestUser)
+        public LoginResult Face([FromBody] User requestUser)
         {
 
             LoginResult result = new LoginResult();
