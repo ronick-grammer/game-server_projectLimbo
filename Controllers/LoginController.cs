@@ -25,11 +25,9 @@ namespace DotnetCoreServer.Controllers
         }
 
         // GET Login/KakaoTest
-        [HttpGet]
-        public string KakaoTest(String responce){
-            
-
-            return responce;
+        [HttpGet("{code}")]
+        public string KakaoTest(string code){
+            return code;
         }
 
         // POST Login/Kakao
