@@ -8,7 +8,7 @@ using DotnetCoreServer.Models;
 namespace DotnetCoreServer.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuedfsdfdsfsController : Controller
+    public class ValuedfsdfdsfsCon : Controller
     {
         // GET api/values
         [HttpGet]
