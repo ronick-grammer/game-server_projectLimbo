@@ -8,7 +8,7 @@ using DotnetCoreServer.Models;
 namespace DotnetCoreServer.Controllers
 {
     [Route("api/[controller]")]
-    public class ValueController : Controller
+    public class ValuesController : Controller
     {
         // GET api/values
         [HttpGet]
