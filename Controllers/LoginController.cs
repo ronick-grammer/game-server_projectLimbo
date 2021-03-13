@@ -24,9 +24,17 @@ namespace DotnetCoreServer.Controllers
             return user;
         }
 
-        // POST Login/Facebook
+        // GET Login/KakaoTest
+        [HttpGet]
+        public string KakaoTest(String responce){
+            
+
+            return responce;
+        }
+
+        // POST Login/Kakao
         [HttpPost]
-        public LoginResult FaceBook([FromBody] User requestUser)
+        public LoginResult Kakao([FromBody] User requestUser)
         {
 
             LoginResult result = new LoginResult();
