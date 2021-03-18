@@ -9,7 +9,6 @@ namespace DotnetCoreServer.Models
         public string KakaoID;
         public string KakaoName;
         public string KakaoPhotoURL;
-        public string KakaoAccessToken;
         public int Point;
         public string AccessToken;
         public string Item;

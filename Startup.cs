@@ -37,7 +37,7 @@ namespace DotnetCoreServer
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton<IUserDao,UserDao>();
             //services.AddSingleton<IStageResultDao,StageResultDao>();
-            services.AddSingleton<IRankDao,RankDao>();
+            //services.AddSingleton<IRankDao,RankDao>();
             //services.AddSingleton<IUpgradeDao,UpgradeDao>();
             services.AddSingleton<IDB,DB>();
 

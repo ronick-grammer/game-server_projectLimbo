@@ -10,7 +10,7 @@ CREATE TABLE `tb_user` (
   `ranking` int(11) DEFAULT '0',
   `deleted` tinyint(2) DEFAULT '0',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*
 CREATE TABLE `tb_user` (
   `user_id` bigint(20) NOT NULL AUTO_INCREMENT,

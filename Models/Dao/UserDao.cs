@@ -35,7 +35,7 @@ namespace DotnetCoreServer.Models
                     cmd.CommandText = query;
                     using (MySqlDataReader reader = (MySqlDataReader)cmd.ExecuteReader())
                     {
-                        if (reader.Read())
+                        if (reader.Read()) // 해당 유저가 존재한다면
                         {
                             user.UserID = reader.GetInt64(0);
                             user.KakaoID = reader.GetString(1);
