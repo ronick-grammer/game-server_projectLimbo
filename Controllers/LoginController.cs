@@ -39,7 +39,7 @@ namespace DotnetCoreServer.Controllers
             // access_token 얻기
             string access_token = get_access_code(authorization_code);
 
-            // 카카오톡 사용자 정보 얻기
+            // 카카오톡 사용자 정보  얻기
             User user = get_userInfo(access_token);
 
             var json = JObject.FromObject(user);
@@ -54,7 +54,7 @@ namespace DotnetCoreServer.Controllers
         [HttpPost]
         public LoginResult Kakao([FromBody] User requestUser)
         {
-
+ 
             LoginResult result = new LoginResult();
             
             User user = userDao.FindUserByFUID(requestUser.KakaoID);
@@ -127,7 +127,7 @@ namespace DotnetCoreServer.Controllers
                 using(StreamReader responseStreamReader = new StreamReader(responseStream, Encoding.UTF8)){
                     string json = responseStreamReader.ReadToEnd();
                     var jObj = JObject.Parse(json); // json 객체 받기
-                    
+
                     user.KakaoID = jObj["id"].ToString();
                     user.KakaoName = jObj["properties"]["nickname"].ToString();
                     user.KakaoPhotoURL = jObj["properties"]["profile_image"].ToString();
