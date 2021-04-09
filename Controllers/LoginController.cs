@@ -101,18 +101,19 @@ namespace DotnetCoreServer.Controllers
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Stream responsePostStream = response.GetResponseStream();
             StreamReader readerPost= new StreamReader(responsePostStream, Encoding.GetEncoding("UTF-8"));
-                
+            
             string status = response.StatusCode.ToString();
 
             string json = readerPost.ReadToEnd();
 
-            // 액세스 토큰 얻기    
+            // 액세스 토큰 얻기
             var jObj = JObject.Parse(json);
             string access_token = jObj.SelectToken("access_token").ToString();
             
             return access_token;
         }
-
+            
+        // 토큰으로 카카오톡 사용자 정보 얻기    
         public User get_userInfo(string access_token){
 
             string request_url = "https://kapi.kakao.com/v2/user/me";
