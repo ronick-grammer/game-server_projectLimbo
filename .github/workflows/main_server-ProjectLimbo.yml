@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '2.1.807'
+        dotnet-version: '5.0.x'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'server-ProjectLimbo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b6c4299eada5487e8a9b3e475bff6782 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6084c5fcddf6421c9713415e61c57d57 }}
         package: .
