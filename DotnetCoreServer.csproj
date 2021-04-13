@@ -16,8 +16,8 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.0"/>
     <PackageReference Include="MySqlConnector" Version="0.22.0"/>
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0"/>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />  
-  </ItemGroup>
+  </ItemGroup> -->
 </Project>
