@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'server-ProjectLimbo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_00837689227442a48de0a0163f7b1ed3 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b9f69d1688e74a17b2de1894c2bd8bac }}
         package: .
